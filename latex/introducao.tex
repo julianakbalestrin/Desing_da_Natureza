@@ -1,0 +1,87 @@
+% =====================================================================
+% Introdução: Rivera-Alvarez & Bejan (2003)
+%
+% Citações no padrão abnTeX2 (pacote abntex2cite):
+%   \cite{chave}        ->  (AUTOR, ano)
+%   \citeonline{chave}  ->  Autor (ano)
+% Se o seu documento usa natbib, troque \cite por \citep
+% e \citeonline por \citet.
+% =====================================================================
+\section{Introdução}
+\label{sec:introducao}
+
+A separação de misturas gasosas é uma etapa central em muitos processos
+industriais e ambientais. Alguns exemplos são a produção de nitrogênio e
+oxigênio a partir do ar, a purificação de hidrogênio, a desumidificação de
+correntes gasosas, a recuperação de hidrocarbonetos e, mais recentemente, a
+captura de dióxido de carbono. Entre as tecnologias disponíveis, a adsorção se
+destaca por usar sólidos porosos que retêm preferencialmente um componente (ou
+uma família de componentes) da alimentação. Essa seletividade pode vir do
+equilíbrio, quando as afinidades termodinâmicas são diferentes, ou da cinética,
+quando as velocidades de difusão no sólido são diferentes
+\cite{ruthven1984,ruthven1994}.
+
+Como a capacidade do adsorvente é finita, todo processo de adsorção é cíclico.
+Depois da etapa de adsorção vem uma etapa de regeneração, ou dessorção, em que
+a espécie retida é liberada e o sólido recupera sua capacidade. A regeneração
+pode ser feita pela redução da pressão (\textit{Pressure Swing Adsorption},
+PSA) ou pelo aumento da temperatura (\textit{Temperature Swing Adsorption},
+TSA). Esse caráter intermitente transforma o tempo em variável de projeto. Um
+ciclo curto demais aproveita pouco a capacidade do sólido em cada etapa. Um
+ciclo longo demais mantém o adsorvente perto da saturação, onde a taxa de
+transferência de massa é baixa. Existe, portanto, um ritmo de operação ótimo,
+especialmente importante nos processos controlados pela cinética.
+
+Ao mesmo tempo, cresce a demanda por equipamentos compactos, capazes de
+transferir o máximo de massa (ou de calor) por unidade de volume e de tempo.
+Reduzir as escalas de comprimento acelera a difusão, mas obriga a distribuir o
+fluido por um número muito grande de canais pequenos, o que aumenta a potência
+de bombeamento. Projetar um trocador compacto é, portanto, buscar um
+compromisso entre transferência e escoamento. A resposta a esse compromisso é
+uma arquitetura de escoamento, e não apenas um conjunto de dimensões.
+
+A teoria constructal, formulada por Adrian Bejan na segunda metade da década de
+1990, oferece um método para tratar esse tipo de problema. Seu princípio
+central, a lei constructal, afirma que, para um sistema de escoamento de
+tamanho finito persistir no tempo, sua configuração deve evoluir de modo a
+facilitar o acesso das correntes que o atravessam
+\cite{bejan2000,bejan2008}. Na engenharia, essa lei se traduz num procedimento
+de construção hierárquica. Primeiro, identifica-se o menor elemento capaz de
+cumprir a função desejada e otimiza-se sua forma sob restrições globais. Em
+seguida, esses elementos são agrupados em construtos cada vez maiores, também
+otimizados \cite{bejan1997}. O resultado típico são estruturas dendríticas, em
+forma de árvore, semelhantes às de bacias hidrográficas, redes vasculares e vias
+aéreas pulmonares \cite{bejan2012}.
+
+Na natureza, ritmo e estrutura aparecem juntos. Na respiração, inspiração e
+expiração se alternam em intervalos de mesma ordem de grandeza. O ar é
+distribuído por uma árvore de vias aéreas até as regiões onde a troca de massa
+ocorre por difusão. O pulmão é, nesse sentido, um trocador de massa
+intermitente com estrutura hierárquica, que é justamente o que um equipamento
+de adsorção compacto procura ser.
+
+Nesse contexto, \citeonline{riveraalvarez2003} aplicam o método constructal a
+processos de adsorção--dessorção e tratam de forma integrada a organização
+temporal e espacial do equipamento. Na primeira parte do trabalho, com modelos
+deliberadamente simples, os autores mostram que existe um tempo de adsorção que
+maximiza a taxa média de captura. Eles analisam três situações: tempo de
+dessorção fixo, tempo de dessorção variável e concentração variável da espécie
+adsorvida na fase gasosa. Na segunda parte, as escalas de tempo otimizadas
+determinam as dimensões do volume elementar, isto é, do canal de gás e da camada
+adsorvente. A partir dele são montados hierarquicamente o primeiro, o segundo e
+o terceiro construtos. Em cada nível, o número de elementos e a distribuição do
+volume ocupado pelos canais são escolhidos para minimizar a potência de
+bombeamento. A arquitetura resultante é formada por duas árvores de escoamento
+acopladas ``copa com copa'', uma de alimentação e outra de coleta. A principal
+conclusão é que há oportunidades reais de otimizar o ritmo e a forma no projeto
+de trocadores de massa com máxima densidade de transferência por unidade de
+volume.
+
+% ---------------------------------------------------------------------
+% Parágrafo opcional (relatório próprio): remova os "%" para usar.
+% ---------------------------------------------------------------------
+% Neste trabalho, a metodologia proposta por \citeonline{riveraalvarez2003} é
+% reproduzida analiticamente. As equações apresentadas são verificadas, os
+% passos intermediários omitidos no artigo são explicitados e o procedimento é
+% então aplicado a um caso com propriedades físicas reais, para avaliar as
+% dimensões ótimas e a potência de bombeamento resultantes.
